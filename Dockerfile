@@ -1,4 +1,4 @@
-FROM arm32v6/python:3.7-alpine3.7
+FROM arm32v6/python:3.8-alpine3.11
 
 # Install dependencies.
 RUN apk --no-cache add git build-base
