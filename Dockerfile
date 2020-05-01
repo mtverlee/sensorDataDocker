@@ -3,6 +3,7 @@ FROM arm32v6/python:3.8-alpine3.11
 # Install dependencies.
 RUN apk add git
 RUN apk add build-base
+
 # Install Adafruit_DHT.
 RUN git clone https://github.com/szazo/DHT11_Python.git && \
 	cd DHT11_Python && \
