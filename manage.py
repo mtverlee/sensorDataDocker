@@ -41,7 +41,7 @@ def getDSData():
     client.publish("Darksky/humidity", str(humidity))
 
 def publishMQTT(topic, value):
-    client = mqtt.Client('dht')
+    client = mqtt.Client('presence')
     client.connect(str(os.environ['MQTT_SERVER']))
     client.publish(topic, value)
 
