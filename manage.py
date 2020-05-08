@@ -46,7 +46,7 @@ def publishMQTT(topic, value):
     client.publish(topic, value)
 
 def getPresenceData():
-    url = "https://mohawk.doubleangels.com/fingLog/output.json"
+    url = "https://mohawk.doubleangels.com/finglog/output.json"
     response = ur.urlopen(url)
     json_data = json.loads(response.read())
 
