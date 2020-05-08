@@ -1,10 +1,10 @@
 FROM arm32v6/python:3.8-alpine3.11
 
 # Set environment variables.
-ARG TZ=America/Denver
-ARG MQTT_SERVER=localhost
-ARG DS_LAT=39.0732
-ARG DS_LNG=-108.4904
+ENV TZ=America/Denver
+ENV MQTT_SERVER=localhost
+ENV DS_LAT=39.0732
+ENV DS_LNG=-108.4904
 
 # Install dependencies.
 RUN apk add git build-base
