@@ -24,7 +24,9 @@ ENV PYTHONUNBUFFERED 1
 ADD requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+# Set up working directory.
 WORKDIR /app
 ADD . /app
 
+# Start main python file.
 CMD ["python", "manage.py"]
